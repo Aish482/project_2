@@ -1,3 +1,10 @@
+**Note : First create sqlite db for storing and retriving the data.
+
+sqlite3 traffic_violations.db ".table _name"
+
+2.Install all the pip requirements and proceed tp run streamlit run app.py
+If this didnt work then run datacleaning.py(takes time as there are more records) and run app.py
+
 # Traffic Violations Insight System
 
 ## Project Overview
