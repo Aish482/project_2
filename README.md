@@ -1,7 +1,3 @@
-# project_2
-Traffic Violations Insight System
-
-
 # Traffic Violations Insight System
 
 ## Project Overview
@@ -23,17 +19,22 @@ Transportation
 3. **Streamlit Visualization Dashboard**: Interactive dashboard for exploration.
 
 ## Setup Instructions
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run data cleaning: `python data_cleaning.py` (This may take time due to large dataset)
-3. Run EDA: `python eda.py`
-4. Launch dashboard: `streamlit run app.py`
+1. Create and activate a virtual environment:  
+   `python -m venv .venv`  
+   `.venv\Scripts\Activate.ps1` (PowerShell) or `.venv\Scripts\activate` (cmd)
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run data cleaning: `python data_cleaning.py` (This may take time due to large dataset)
+4. (Optional) Run EDA: `python eda.py`
+5. Launch dashboard: `streamlit run app.py`
 
 ## Files
+- `app.py`: Streamlit dashboard.
 - `data_cleaning.py`: Cleans and loads data into SQLite database.
 - `eda.py`: Performs EDA and generates plots.
-- `app.py`: Streamlit dashboard.
 - `requirements.txt`: Python dependencies.
+- `pyproject.toml`: Project configuration and tool settings.
 - `traffic_violations.db`: SQLite database (created after cleaning).
+- `.gitignore`: Excludes large/generated files from Git.
 
 ## Business Use Cases
 - Improve road safety
